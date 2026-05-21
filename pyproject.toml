@@ -1,0 +1,21 @@
+[project]
+name = "omny"
+version = "0.1.0"
+description = "Multi purpose MCP server for daily use"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "mcp[cli]>=1.27.1",
+]
+[project.scripts]
+omny = "omny.__main__:main"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tools.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
