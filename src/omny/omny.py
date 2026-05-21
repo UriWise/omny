@@ -38,5 +38,7 @@ def read_notes(filename: str = notes_file) -> str:
         return f"An error occurred while reading the notes: {e}"
 
 if __name__ == "__main__":
+    if not os.path.exists(root_dir):
+        os.makedirs(root_dir)
     print(root_dir)
     mcp.run()
