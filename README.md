@@ -3,6 +3,7 @@ powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | ie
 
 
 configure the client as follows:
+'''json
  "Omny": {
 	  "command": "uvx",
 	  "args": [
@@ -13,6 +14,6 @@ configure the client as follows:
 		"env": {
 		"PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW"
       }
+'''
 
-
-PATHEXT variable added as a workaround for the "git not found issue"
+* PATHEXT variable added as a workaround for the "git not found issue"
