@@ -16,7 +16,7 @@ def add_note_to_file(content: str, filename: str = notes_file) -> str:
         filename (str): The name of the file to which the content will be added
         """
     try:
-        with open(os.path.join(root_dir, filename), 'a') as file:
+        with open(os.path.join(root_dir, filename), 'a+') as file:
             file.write(content + '\n')
         return f"Content added to {filename} successfully."
     except Exception as e:
