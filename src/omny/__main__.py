@@ -9,6 +9,4 @@ def main():
     mcp.run()
 
 if __name__ == "__main__":
-    if not os.path.exists(root_dir):
-        os.makedirs(root_dir)
     main()

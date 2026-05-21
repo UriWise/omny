@@ -5,7 +5,7 @@ import sys
 mcp = FastMCP("LocalNotes")
 notes_file = "notes.txt"
 root_dir = os.path.join(os.path.expanduser("~"), "omny")
-
+os.makedirs(root_dir, exist_ok=True)
 
 
 @mcp.tool()
